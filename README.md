@@ -1,4 +1,10 @@
 # Node API Proxy
+##### Proxy API-calls through an express-server
+
+
+#### Deploy directly to Heroku (requires login):
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Instructions
 
