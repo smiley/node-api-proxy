@@ -9,6 +9,7 @@
     "cors",
     "REST"
   ],
+  "logo": "http://i.imgur.com/BrKY4I3.png",
   "repository": "https://github.com/jesperorb/node-api-proxy",
   "env": {
     "API_URL": {
