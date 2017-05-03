@@ -9,7 +9,7 @@ You can either use the deploy button to create everything automatically. It shou
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-## Instructions
+## Manual Instructions
 
 1 . Clone repository and `cd` into the folder.
 
@@ -33,3 +33,42 @@ npm start
 
 5. Make your API-requests to [`http://localhost:3000`](http://localhost:3000) instead.
 
+### Manual Deploy
+
+1 . Create an account on **[https://heroku.com](https://heroku.com)**. This should be pretty straight forward.
+
+2 . Install the Heroku CLI on your computer: <br/>**[https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)**. 
+
+Check that you have the `heroku-cli` installed by checking the version number in your terminal:
+```bash
+heroku --version
+```
+
+3 . Connect the `Heroku CLI` to your account by writing the following command in your terminal and follow the instructions on the command line:
+```bash
+heroku login
+```
+_Use your credentials from the earlier account creation._
+
+4 . Then create a remote heroku project, kinda like creating a git repository on GitHub. This will create a project on Heroku with a random name. If you want to name your app you have to supply your own name like `heroku create project-name`. The command below will just create a random name:
+```bash
+heroku create
+```
+
+5 . Push your app to __Heroku__ like pushing to GitHub expect for `origin` you have `heroku` (you will see a wall of code).
+```bash
+git push heroku master
+```
+
+6 . Visit your newly create app by opening it via heroku:
+```bash
+heroku open
+```
+
+
+If you are getting errors you can view the error logs by running this command:
+```bash
+heroku logs --tail
+```
+
+This might give you a hint on what's wrong.
