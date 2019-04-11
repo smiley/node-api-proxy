@@ -10,7 +10,7 @@
     "REST"
   ],
   "logo": "http://i.imgur.com/BrKY4I3.png",
-  "repository": "https://github.com/jesperorb/node-api-proxy",
+  "repository": "https://github.com/smiley/node-api-proxy",
   "env": {
     "API_URL": {
       "description": "The root-url to your api. For example if you want to call the GitHub API: 'https://api.github.com/'"
@@ -20,6 +20,9 @@
     },
     "API_KEY_VALUE": {
       "description": "The value of your API key. The long string after '=' :)"
+    },
+    "DNS_RESTRICT": {
+      "description": "Set to a DNS FQDN containing an A record if you'd like to restrict use of this server only to those IPs."
     }
   },
   "image": "heroku/nodejs"
